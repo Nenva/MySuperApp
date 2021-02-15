@@ -6,23 +6,23 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".RegisterActivity">
+        tools:context=".UpdateUserActivity">
 
         <ImageView
-            android:id="@+id/register_imageUser"
+            android:id="@+id/update_imageUser"
             android:layout_width="0dp"
             android:layout_height="171dp"
             android:layout_marginTop="38dp"
             android:layout_marginBottom="32dp"
             android:src="@drawable/user_icon"
-            app:layout_constraintBottom_toTopOf="@+id/register_titleUserCompleteNames"
+            app:layout_constraintBottom_toTopOf="@+id/update_titleUserCompleteNames"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/register_titleUserCompleteNames"
+            android:id="@+id/update_titleUserCompleteNames"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,13 +31,13 @@
             android:layout_marginBottom="10dp"
             android:hint="@string/complete_name"
             android:textColorHint="@color/color_text"
-            app:layout_constraintBottom_toTopOf="@+id/register_titleUserEmail"
+            app:layout_constraintBottom_toTopOf="@+id/update_titleUserEmail"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toStartOf="parent">
 
             <EditText
-                android:id="@+id/register_userCompleteName"
+                android:id="@+id/update_userCompleteName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nunito_sans"
@@ -47,7 +47,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/register_titleUserEmail"
+            android:id="@+id/update_titleUserEmail"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,24 +56,24 @@
             android:layout_marginBottom="10dp"
             android:hint="@string/Email"
             android:textColorHint="@color/color_text"
+            app:layout_constraintBottom_toTopOf="@+id/update_titleUserPhone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/register_titleUserPhone">
+            app:layout_constraintStart_toStartOf="parent">
 
             <EditText
-                android:id="@+id/register_userEmail"
+                android:id="@+id/update_userEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
                 android:fontFamily="@font/nunito_sans"
+                android:inputType="textEmailAddress"
                 android:padding="@dimen/editText_padding"
-                android:textSize="@dimen/editText_textSize"
-                android:textColor="@color/color_text" />
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/editText_textSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/register_titleUserPhone"
+            android:id="@+id/update_titleUserPhone"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -82,24 +82,24 @@
             android:layout_marginBottom="10dp"
             android:hint="@string/phone_number"
             android:textColorHint="@color/color_text"
-            app:layout_constraintBottom_toTopOf="@+id/register_titleUserPassword"
+            app:layout_constraintBottom_toTopOf="@+id/update_titleUserPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent">
 
             <EditText
-                android:id="@+id/register_userPhone"
+                android:id="@+id/update_userPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
                 android:fontFamily="@font/nunito_sans"
+                android:inputType="number"
                 android:padding="@dimen/editText_padding"
-                android:textSize="@dimen/editText_textSize"
-                android:textColor="@color/color_text" />
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/editText_textSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/register_titleUserPassword"
+            android:id="@+id/update_titleUserPassword"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -108,27 +108,26 @@
             android:layout_marginBottom="50dp"
             android:hint="@string/Password"
             android:textColorHint="@color/color_text"
-            app:layout_constraintBottom_toTopOf="@+id/button_registerUser"
+            app:layout_constraintBottom_toTopOf="@+id/button_updateUser"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent" >
+            app:layout_constraintStart_toStartOf="parent">
 
             <EditText
-                android:id="@+id/register_userPassword"
+                android:id="@+id/update_userPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nunito_sans"
                 android:inputType="textPassword"
                 android:padding="@dimen/editText_padding"
-                android:textSize="@dimen/editText_textSize"
-                android:textColor="@color/color_text"/>
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/editText_textSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/button_registerUser"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:id="@+id/button_updateUser"
+            android:layout_width="173dp"
+            android:layout_height="52dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="32dp"
             android:background="@drawable/button_background_color"
@@ -138,29 +137,32 @@
             android:paddingStart="@dimen/button_padding"
             android:paddingEnd="@dimen/button_padding"
             android:paddingBottom="@dimen/button_padding"
-            android:text="@string/create_user"
+            android:text="@string/update"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="@dimen/button_textSize"
-            app:layout_constraintBottom_toTopOf="@+id/text_login"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button_cancelUpdateUser"
+            android:layout_width="173dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_background_color"
+            android:fontFamily="@font/nunito_sans"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingStart="@dimen/button_padding"
+            android:paddingEnd="@dimen/button_padding"
+            android:paddingBottom="@dimen/button_padding"
+            android:text="@string/cancel_update_user"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_textSize"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/text_login"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="32dp"
-            android:gravity="center"
-            android:text="@string/text_login"
-            android:textStyle="bold"
-            android:textColor="@color/color_text"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

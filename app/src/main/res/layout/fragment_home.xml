@@ -13,18 +13,186 @@
         android:layout_height="match_parent"
         tools:context=".HomeFragment">
 
+        <ImageView
+            android:id="@+id/homeImage_911"
+            android:layout_width="86dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toStartOf="@+id/homeImage_police"
+            app:layout_constraintHorizontal_bias="0.203"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/emergency" />
+
         <TextView
-            android:id="@+id/text_main"
+            android:id="@+id/text_911"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home"
-            android:textSize="60sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="911"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/homeImage_911" />
+
+        <ImageView
+            android:id="@+id/homeImage_police"
+            android:layout_width="86dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/civil_defense_icon" />
+
+        <TextView
+            android:id="@+id/text_police"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="84dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Policia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeImage_police" />
+
+        <ImageView
+            android:id="@+id/homeImage_fire"
+            android:layout_width="86dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toStartOf="@+id/homeImage_imOk"
+            app:layout_constraintHorizontal_bias="0.203"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_911"
+            app:srcCompat="@drawable/fire_icon" />
+
+        <TextView
+            android:id="@+id/text_fire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Incendio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeImage_fire" />
+
+        <ImageView
+            android:id="@+id/homeImage_imOk"
+            android:layout_width="86dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_police"
+            app:srcCompat="@drawable/imgood_icon" />
+
+        <TextView
+            android:id="@+id/text_im_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="¡Estoy bien!"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeImage_imOk" />
+
+        <ImageView
+            android:id="@+id/homeImage_ambulance"
+            android:layout_width="86dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toStartOf="@+id/homeImage_genreViolence"
+            app:layout_constraintHorizontal_bias="0.203"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_fire"
+            app:srcCompat="@drawable/emergency_icon" />
+
+        <TextView
+            android:id="@+id/text_ambulance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Ambulancia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeImage_ambulance" />
+
+        <ImageView
+            android:id="@+id/homeImage_genreViolence"
+            android:layout_width="86dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_im_ok"
+            app:srcCompat="@drawable/violence_genre_icon" />
+
+        <TextView
+            android:id="@+id/text_violence"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="44dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Violencia de género"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeImage_genreViolence" />
+
+        <ImageView
+            android:id="@+id/homeImage_kidnapping"
+            android:layout_width="86dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toStartOf="@+id/homeImage_robbery"
+            app:layout_constraintHorizontal_bias="0.203"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_ambulance"
+            app:srcCompat="@drawable/kidnapping_icon" />
+
+        <TextView
+            android:id="@+id/text_kidnapping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Secuestro"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeImage_kidnapping" />
+
+        <ImageView
+            android:id="@+id/homeImage_robbery"
+            android:layout_width="86dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_violence"
+            app:srcCompat="@drawable/robbery_icon" />
+
+        <TextView
+            android:id="@+id/text_robbery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="88dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Robo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeImage_robbery" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

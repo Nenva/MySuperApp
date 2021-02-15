@@ -4,7 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
-    <string name="Email">Correl electrónico</string>
+    <string name="Email">Correo electrónico</string>
     <string name="Password">Contraseña</string>
     <string name="Login">Ingresar</string>
     <string name="text_register">¿Quieres crear una cuenta? Click aquí</string>
@@ -12,4 +12,7 @@
     <string name="phone_number">Número telefónico</string>
     <string name="create_user">Crear usuario</string>
     <string name="text_login">¿Ya tienes cuenta? Click aquí</string>
+    <string name="user_update">Actualizar usuario</string>
+    <string name="update">Actualizar</string>
+    <string name="cancel_update_user">Cancelar</string>
 </resources>

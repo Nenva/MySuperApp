@@ -41,4 +41,8 @@
         android:id="@+id/terms_and_conditions"
         android:title="Términos y condiciones"/>
 
+    <item
+        android:id="@+id/logout"
+        android:title="Salir"/>
+
 </menu>

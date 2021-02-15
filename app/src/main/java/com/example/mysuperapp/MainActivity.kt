@@ -1,5 +1,6 @@
 package com.example.mysuperapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -61,11 +62,19 @@ class MainActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT).show()
                 R.id.faq -> Toast.makeText(this, "FAQ",
                     Toast.LENGTH_SHORT).show()
-                R.id.terms_and_conditions -> Toast.makeText(this, "Términos y condiciones",
+                R.id.terms_and_conditions ->
+                    Toast.makeText(this, "Términos y condiciones",
                     Toast.LENGTH_SHORT).show()
+                R.id.logout ->
+                goLoginActivityFromMainActivity()
             }
             true
         }
+    }
+
+    private fun goLoginActivityFromMainActivity() {
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

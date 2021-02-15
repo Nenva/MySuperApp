@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
     app:startDestination="@id/homeFragment">
 
     <fragment
@@ -14,9 +16,22 @@
     <fragment
         android:id="@+id/userFragment"
         android:name="com.example.mysuperapp.UserFragment"
-        android:label="Usuario" />
+        android:label="Usuario" >
+        <action
+            android:id="@+id/action_userFragment_to_updateUserInfoFragment"
+            app:destination="@id/updateUserInfoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/alertsFragment"
         android:name="com.example.mysuperapp.AlertsFragment"
         android:label="Alertas" />
+    <fragment
+        android:id="@+id/updateUserInfoFragment"
+        android:name="com.example.mysuperapp.UpdateUserInfoFragment"
+        android:label="fragment_update_user_info"
+        tools:layout="@layout/fragment_update_user_info" >
+        <action
+            android:id="@+id/action_updateUserInfoFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
 </navigation>
