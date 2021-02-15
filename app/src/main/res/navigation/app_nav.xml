@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mysuperapp.HomeFragment"
+        android:label="Principal" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.example.mysuperapp.ContactsFragment"
+        android:label="Contactos" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.mysuperapp.UserFragment"
+        android:label="Usuario" />
+    <fragment
+        android:id="@+id/alertsFragment"
+        android:name="com.example.mysuperapp.AlertsFragment"
+        android:label="Alertas" />
+</navigation>

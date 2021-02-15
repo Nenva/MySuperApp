@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_background_radius">10dp</dimen>
+    <dimen name="editText_padding">16dp</dimen>
+    <dimen name="editText_textSize">16sp</dimen>
+    <dimen name="button_textSize">22sp</dimen>
+    <dimen name="button_padding">8dp</dimen>
+</resources>

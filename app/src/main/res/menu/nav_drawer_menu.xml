@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sos"
+        android:title="SOS Emergencias"/>
+
+    <item
+        android:id="@+id/municipality"
+        android:title="Municipalidad"/>
+
+    <item
+        android:id="@+id/procedures"
+        android:title="Trámites"/>
+
+    <item
+        android:id="@+id/services"
+        android:title="Servicios"/>
+
+    <item
+        android:id="@+id/official_web"
+        android:title="Página web oficial"/>
+
+    <item
+        android:id="@+id/coronavirus"
+        android:title="Coronavirus"/>
+
+    <item
+        android:id="@+id/number_phones"
+        android:title="Teléfonos útiles"/>
+
+    <item
+        android:id="@+id/videos"
+        android:title="Videos"/>
+
+    <item
+        android:id="@+id/faq"
+        android:title="FAQ"/>
+
+    <item
+        android:id="@+id/terms_and_conditions"
+        android:title="Términos y condiciones"/>
+
+</menu>
